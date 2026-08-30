@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGaurd - Secure Password Generator</title>
+</head>
+<link rel="stylesheet" href="Style.css">
+<body>
+    <div class="upperContainer">
+        <div class="CRDT">
+        <h1>&#10066 PassGaurd</h1>
+        <p>Designed & Developed by Shrijib Dey</p>
+        </div>
+        <button class="savedPw">Go to Saved Passwords</button>
+    </div>
+
+    <div class="card">
+        <div class="title">
+            <p>Generate a Strong, Unpredictable Password</p>
+            <span>Create high-entropy passwords using cryptographically secure randomness.</span>
+        </div>
+
+        <div class="inputArea">
+            <input type="text" id="pw" readonly>
+            <button class="copybtn" id="copy">COPY</button>
+        </div>
+
+        <div class="imp">
+            <div class="passwordlenght">
+                <p>Password Length</p>
+                <p id="pwLength">8</p>
+            </div>
+
+            <div class="slider">
+                <input type="range" id="pwRange" min="8" max="25" value="8">
+            </div>
+        </div>
+
+        <div class="others">
+            <div class="option">
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" id="uppercase">
+            </div>
+            
+            <div class="option">
+                <label for="numbers">Inclue Numbers</label>
+                <input type="checkbox" id="numbers">
+            </div>
+
+            <div class="option">
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" id="symbols">
+            </div>
+        </div>
+
+        <div class="endSection">
+            <button id="generate">GENERATE</button>
+            <button id="SavePw">SAVE</button>
+        </div>
+
+        <div class="securityStatus">
+            <p>✓ Cryptographically secure randomness</p>
+            <p>✓ Generated locally in your browser</p>
+            <p>✓ No predictable patterns</p>
+        </div>
+    </div>
+
+    <div class="securityInfo">
+        <h2>Security Without The Guesswork.</h2>
+
+        <p>
+            PassGaurd generates unpredictable passwords using your browser's
+            cryptographic random number generator. The goal isn't to make
+            passwords complicated for the sake of complexity. It's to make
+            them difficult for automated systems to predict.
+        </p>
+
+        <div class="securityFeatures">
+
+            <div class="feature">
+                <h3>Cryptographically Secure</h3>
+                <p>
+                    Password characters are generated using the Web Crypto API,
+                    designed for security-sensitive applications.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Unpredictable by Design</h3>
+                <p>
+                    Passwords aren't based on names, dates, patterns, or
+                    dictionary words.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Generated Locally</h3>
+                <p>
+                    Your generated password stays in your browser and isn't
+                    sent to a server.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="securityQuote">
+            <strong>More possibilities. Fewer guesses.</strong>
+            <span>
+                Every additional character increases the number of possible
+                passwords an attacker would need to consider.
+            </span>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
