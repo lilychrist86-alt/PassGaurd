@@ -128,6 +128,44 @@ body {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
+.pwforclass{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#pwfor{
+    height: 42px;
+    width: 100%;
+    padding: 0 12px;
+    margin-top: 12px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #F8FAFC;
+    color: #0F172A;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+#pwfor:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+#pwfor:hover {
+    background: #F1F5F9;
+    border-color: #94A3B8;
+}
+
+#pwfor:active {
+    transform: scale(0.97);
+}
+
+
 
 .copybtn {
     width: 72px;

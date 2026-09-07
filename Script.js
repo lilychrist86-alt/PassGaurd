@@ -9,7 +9,9 @@ let checkNumbers = document.getElementById("numbers");
 let checkSymbols = document.getElementById("symbols");
 
 const generateBtn = document.getElementById("generate");
-const savePW = document.getElementById("SavePw");
+const savebtn = document.getElementById("SavePw");
+const serviceBtn = document.getElementById("pwfor");
+
 
 
 slider.addEventListener("input", () => {
@@ -64,3 +66,39 @@ copybtn.addEventListener("click", ()=>{
         copybtn.textContent = "COPY";
     }, 1500);
 })
+
+
+// Save Feature 
+let AllPasswords = [];
+
+
+let StoredData = localStorage.getItem("PW:");
+
+if(StoredData){
+    AllPasswords = JSON.parse(StoredData);
+};
+    
+
+
+
+savebtn.addEventListener("click", ()=>{
+    const password = inputbox.value;
+    const service = serviceBtn.value;
+
+    const passwordData = {
+        Service: service,
+        Passsword: password
+    };
+
+    AllPasswords.push(passwordData);
+
+    const StringDataToStore = JSON.stringify(AllPasswords);
+    localStorage.setItem("PW:", StringDataToStore);
+
+    console.log(StringDataToStore);
+});
+
+
+
+
+

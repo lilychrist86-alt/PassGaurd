@@ -1,0 +1,70 @@
+bhai yhe hai mera main page ka code:
+
+/ Save Feature 
+let AllPasswords = [];
+
+let StoredData = localStorage.getItem("PW:");
+if(StoredData){
+    AllPasswords = JSON.parse(StoredData);
+};
+
+savebtn.addEventListener("click", ()=>{
+    const password = inputbox.value;
+    const service = serviceBtn.value;
+
+    const passwordData = {
+        Service: service,
+        Passsword: password
+    };
+    AllPasswords.push(passwordData);
+    const StringDataToStore = JSON.stringify(AllPasswords);
+    localStorage.setItem("PW:", StringDataToStore);
+    console.log(StringDataToStore);
+});
+
+aur yeh hai mera "Go to saved passwords" page ka html aur JS code:
+html: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Passwords</title>
+</head>
+<link rel="stylesheet" href="Savedpws.css">
+<body>
+    <h3>Your Saved Passwords</h3>
+
+    <script src="savedpws.js"></script>
+</body>
+</html>
+JS:
+console.log("server started. page is working.");
+
+let ShowPasswordDiv = document.querySelector(".savedpw");
+
+let fromLocalStorageString = localStorage.getItem("PW:");
+let AllPasswords = JSON.parse(fromLocalStorageString);
+
+let i = 0;
+while(i < AllPasswords.length){
+
+    const firstCard = document.createElement("div");
+    firstCard.className = "pwCard";
+    
+    const serviceName = document.createElement("h3");
+    serviceName.textContent = AllPasswords[i].Service;
+    
+    const passwordshow = document.createElement("h3");
+    passwordshow.textContent = AllPasswords[i].Passsword;
+    
+    firstCard.appendChild(serviceName);
+    firstCard.appendChild(passwordshow);
+    ShowPasswordDiv.appendChild(firstCard);
+    i++;
+};
+console.log(AllPasswords[0].Service);
+console.log(AllPasswords[0].Passsword);
+
+[bhai main page me password generate karne k baad save button pe click karte hi password save
+toh ho rha hai lekin go to saved password page me jane k baad password show nhi ho rha!😭];
