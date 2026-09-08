@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F8FAFC;
+    color: #0F172A;
+}
+
+
+/* =========================
+          HEADER
+========================= */
+
+.upperContainer {
+    width: 100%;
+
+    padding: 18px 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #FFFFFF;
+
+    border-bottom: 1px solid #E2E8F0;
+}
+
+
+.upperContainer h1 {
+    margin-left: 8px;
+
+    color: #0F172A;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+
+.upperContainer p {
+    font-size: 12px;
+}
+
+
+.mainpagebtn {
+    margin-right: 8px;
+
+    padding: 9px 15px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+
+    color: #2563EB;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.mainpagebtn:hover {
+    background: #F1F5F9;
+    border-color: #94A3B8;
+}
+
+
+.mainpagebtn:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+           CARD
+========================= */
+
+.card {
+    margin-top: 55px;
+
+    padding: 28px;
+
+    width: 380px;
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 16px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+
+    box-shadow:
+        0 4px 6px rgba(15, 23, 42, 0.03),
+        0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================
+          TITLE
+========================= */
+
+.title {
+    width: 100%;
+}
+
+
+.title p {
+    color: #0F172A;
+
+    font-size: 21px;
+    font-weight: 600;
+
+    letter-spacing: -0.3px;
+}
+
+
+.title span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #64748B;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+      PASSWORD INPUT
+========================= */
+
+.createCard {
+    width: 100%;
+
+    margin-top: 22px;
+}
+
+
+#CreatePwBox {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #F8FAFC;
+
+    color: #0F172A;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+#CreatePwBox:focus {
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+       SERVICE INPUT
+========================= */
+
+.pwfor {
+    width: 100%;
+
+    margin-top: 12px;
+}
+
+
+#pwfor {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #F8FAFC;
+
+    color: #0F172A;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+#pwfor:focus {
+    border-color: #2563EB;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+#pwfor:hover,
+#CreatePwBox:hover {
+    background: #F1F5F9;
+
+    border-color: #94A3B8;
+}
+
+
+/* =========================
+     PASSWORD STRENGTH
+========================= */
+
+.strength {
+    width: 100%;
+
+    margin-top: 24px;
+
+    padding: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #F8FAFC;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+}
+
+
+.strength p:first-child {
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+#PwStrength {
+    padding: 4px 9px;
+
+    border-radius: 6px;
+
+    background: #EFF6FF;
+
+    color: #2563EB;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================
+         SAVE BUTTON
+========================= */
+
+.savebox {
+    width: 100%;
+
+    margin-top: 22px;
+}
+
+
+#savebtn {
+    width: 100%;
+    height: 42px;
+
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+
+    background: #2563EB;
+
+    color: #FFFFFF;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.2);
+
+    transition: 0.2s ease;
+}
+
+
+#savebtn:hover {
+    background: #1D4ED8;
+
+    border-color: #1D4ED8;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+
+#savebtn:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+          MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .upperContainer {
+        padding: 15px 16px;
+    }
+
+
+    .upperContainer h1 {
+        margin-left: 0;
+
+        font-size: 20px;
+    }
+
+
+    .upperContainer p {
+        font-size: 11px;
+    }
+
+
+    .mainpagebtn {
+        margin-right: 0;
+
+        padding: 8px 10px;
+
+        font-size: 11px;
+    }
+
+
+    .card {
+        width: calc(100% - 30px);
+
+        margin-top: 30px;
+
+        padding: 22px;
+
+        min-height: auto;
+    }
+
+
+    .title p {
+        font-size: 19px;
+    }
+
+}

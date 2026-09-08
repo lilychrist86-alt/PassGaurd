@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own Password</title>
+</head>
+<link rel="stylesheet" href="createpw.css">
+<body>
+    <div class="upperContainer">
+        <div>
+            <h1>&#10066 PassGaurd</h1>
+            <p>Designed & Developed by Shrijib Dey</p>
+        </div>
+
+        <button class="mainpagebtn" onclick="window.location.href='index.html'">
+            Back to Generator
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="title">
+            <p>Create Your Own Password</p>
+            <span>Create And check Password Strength Based on Password's Length And Characters.</span>
+        </div>
+
+        <div class="createCard">
+            <input type="text" id="CreatePwBox" placeholder="e.g. Tiyasha@2008">
+        </div>
+
+        <div class="pwfor">
+            <input type="text" id="pwfor" placeholder="e.g. Instagram">
+        </div>
+
+        <div class="strength">
+            <p>Password Strength</p>
+            <p id="PwStrength">Strong</p>
+        </div>
+
+        <div class="savebox">
+            <button id="savebtn">SAVE</button>
+        </div>
+    </div>
+
+    <script src="createpw.js"></script>
+</body>
+</html>

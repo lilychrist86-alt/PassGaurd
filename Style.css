@@ -67,6 +67,28 @@ body {
     transform: scale(0.97);
 }
 
+
+.createpw {
+    padding: 9px 15px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #0168f8;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.createpw:hover {
+    background: #F1F5F9;
+    border-color: #94A3B8;
+}
+
+.createpw:active {
+    transform: scale(0.97);
+}
+
 .card {
     margin-top: 55px;
     padding: 28px;
@@ -482,6 +504,143 @@ body {
     color: #64748B;
     font-size: 11px;
 }
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#themeToggle {
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s ease;
+}
+
+#themeToggle:hover {
+    background: #F1F5F9;
+}
+
+#themeToggle:active {
+    transform: scale(0.95);
+}
+
+
+
+/* DarK MOde toggle */
+
+body.dark-mode {
+    background: #121417;
+    color: #F1F5F9;
+}
+
+
+body.dark-mode .upperContainer {
+    background: #171A1F;
+    border-color: #2B3138;
+}
+
+body.dark-mode .upperContainer h1 {
+    color: #F1F5F9;
+}
+
+body.dark-mode .upperContainer p {
+    color: #9CA3AF;
+}
+
+body.dark-mode .card {
+    background: #1B1F24;
+    border-color: #2B3138;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.15),
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .title p {
+    color: #F1F5F9;
+}
+
+body.dark-mode .title span {
+    color: #9CA3AF;
+}
+
+body.dark-mode #pw,
+body.dark-mode #pwfor,
+body.dark-mode #CreatePwBox {
+    background: #14181D;
+    color: #F1F5F9;
+    border-color: #2B3138;
+}
+
+body.dark-mode #pw::placeholder,
+body.dark-mode #pwfor::placeholder,
+body.dark-mode #CreatePwBox::placeholder {
+    color: #6B7280;
+}
+
+
+body.dark-mode #pw:hover,
+body.dark-mode #pwfor:hover,
+body.dark-mode #CreatePwBox:hover {
+    background: #191D22;
+    border-color: #475569;
+}
+
+
+body.dark-mode .passwordlenght p:first-child {
+    color: #CBD5E1;
+}
+
+body.dark-mode .option label {
+    color: #CBD5E1;
+}
+
+
+body.dark-mode .securityStatus {
+    background: #172033;
+    border-color: #243653;
+}
+
+
+body.dark-mode .securityStatus p {
+    color: #60A5FA;
+}
+
+
+body.dark-mode #themeToggle {
+    background: #1B1F24;
+    border-color: #2B3138;
+}
+
+
+body.dark-mode .savedPw,
+body.dark-mode .mainpagebtn {
+    background: #1B1F24;
+    color: #60A5FA;
+    border-color: #2B3138;
+}
+
+
+body.dark-mode .savedPw:hover,
+body.dark-mode .mainpagebtn:hover {
+    background: #22272E;
+    border-color: #475569;
+}
+
+
+
+
+
 
 
 

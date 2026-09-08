@@ -87,7 +87,7 @@ savebtn.addEventListener("click", ()=>{
 
     const passwordData = {
         Service: service,
-        Passsword: password
+        Password: password
     };
 
     AllPasswords.push(passwordData);
@@ -99,6 +99,21 @@ savebtn.addEventListener("click", ()=>{
 });
 
 
+
+// dark mode toggle button activate
+const themeToggle = document.getElementById("themeToggle");
+
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+});
 
 
 

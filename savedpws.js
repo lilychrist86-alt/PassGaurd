@@ -24,7 +24,7 @@ const details = document.createElement("div");
     serviceName.textContent = AllPasswords[i].Service;
     
     const passwordshow = document.createElement("h3");
-    passwordshow.textContent = AllPasswords[i].Passsword;
+    passwordshow.textContent = AllPasswords[i].Password;
     
     const copybtn = document.createElement("button");
     copybtn.textContent = "COPY";
@@ -34,7 +34,7 @@ const details = document.createElement("div");
 
 
     copybtn.addEventListener("click", ()=>{
-    navigator.clipboard.writeText(currentPasswword.Passsword);
+    navigator.clipboard.writeText(currentPasswword.Password);
 
     copybtn.textContent = "✅";
     setTimeout(() => {
