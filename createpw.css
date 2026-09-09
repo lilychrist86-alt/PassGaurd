@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 0.4s ease;
+}
+
+@keyframes pageLoad {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 * {
     margin: 0;

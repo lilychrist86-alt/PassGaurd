@@ -96,6 +96,8 @@ savebtn.addEventListener("click", ()=>{
     localStorage.setItem("PW:", StringDataToStore);
 
     console.log(StringDataToStore);
+
+    location.reload();
 });
 
 

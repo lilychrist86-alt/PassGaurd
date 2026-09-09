@@ -19,6 +19,9 @@ while(i < AllPasswords.length){
     
 
 const details = document.createElement("div");
+const actions = document.createElement("div");
+
+    actions.className = "actionButtons";
 
     const serviceName = document.createElement("h3");
     serviceName.textContent = AllPasswords[i].Service;
@@ -30,7 +33,26 @@ const details = document.createElement("div");
     copybtn.textContent = "COPY";
     copybtn.className = "cpybtn";
 
+    const deletebtn = document.createElement("button");
+    deletebtn.textContent = "DELETE";
+    deletebtn.className = "dltbtn";
+
     const currentPasswword = AllPasswords[i];
+
+    const savedIndx = i;
+
+    deletebtn.addEventListener("click", ()=>{
+        AllPasswords.splice(savedIndx, 1);
+
+        location.reload();
+
+        const updatedData = JSON.stringify(AllPasswords);
+        localStorage.setItem("PW:", updatedData);
+    });
+
+
+    
+
 
 
     copybtn.addEventListener("click", ()=>{
@@ -45,9 +67,13 @@ const details = document.createElement("div");
     details.appendChild(serviceName);
     details.appendChild(passwordshow);
 
+    actions.appendChild(copybtn);
+    actions.appendChild(deletebtn);
 
     card.appendChild(details);
-    card.appendChild(copybtn);
+    card.appendChild(actions);
+
+
     ShowPasswordDiv.appendChild(card);
     i++;
 };

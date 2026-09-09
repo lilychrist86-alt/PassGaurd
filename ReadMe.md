@@ -170,6 +170,7 @@ The interface avoids unnecessary elements and focuses on the most important acti
 * Customize the password
 * Copy it easily
 * Save it for later
+* Delete it if needed
 
 The goal is to make password generation feel simple without sacrificing the feeling of security and professionalism.
 
@@ -179,7 +180,6 @@ The goal is to make password generation feel simple without sacrificing the feel
 
 Possible future updates include:
 
-* Password strength analysis
 * Password entropy estimation
 * Search saved passwords
 * Delete individual saved passwords

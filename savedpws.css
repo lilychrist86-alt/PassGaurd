@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 0.4s ease;
+}
+
+@keyframes pageLoad {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -138,13 +159,21 @@ body {
     justify-content: space-between;
 }
 
+.actionButtons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
 .cpybtn{
     width: 72px;
     height: 42px;
     border: 1px solid #CBD5E1;
     border-radius: 8px;
     background: #FFFFFF;
-    color: #2563EB;
+    color: #00c51a;
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -153,10 +182,33 @@ body {
 
 .cpybtn:hover{
     background: #EFF6FF;
-    border-color: #93C5FD;
+    border-color: #93fd93;
 }
 
 .cpybtn:active{
+    transform: scale(0.96);
+}
+
+
+.dltbtn {
+    width: 72px;
+    height: 42px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #f70000;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.dltbtn:hover{
+    background: #EFF6FF;
+    border-color: #fd9393;
+}
+
+.dltbtn:active{
     transform: scale(0.96);
 }
 

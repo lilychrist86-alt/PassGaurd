@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PassGaurd - Secure Password Generator</title>
+    <title>PassGaurd - Local Password Generator</title>
 </head>
 <link rel="stylesheet" href="Style.css">
 <body>
@@ -12,12 +12,15 @@
         <h1>&#10066 PassGaurd</h1>
         <p>Designed & Developed by Shrijib Dey</p>
         </div>
-        <button onclick="window.location.href='createpw.html'" class="createpw">Create Your Own</button>
-        <div class="headerActions">
 
-            <button onclick="window.location.href='saved-passwords.html'" class="savedPw">Go to Saved Passwords</button>
+        <div class="headerActions">
+            
             <button id="themeToggle">🌙</button>
+            <button onclick="window.location.href='createpw.html'" class="createpw">+</button>
+            <button onclick="window.location.href='saved-passwords.html'" class="savedPw">Saved Passwords</button>
+        
         </div>
+
     </div>
     <div class="card">
         <div class="title">
@@ -63,7 +66,7 @@
             <button id="SavePw" class="savepwbtn">SAVE</button>
         </div>
         <div class="pwforclass">
-            <input id="pwfor" type="text" placeholder="Password For:">
+            <input id="pwfor" type="text" placeholder="Password For:" required>
         </div>
 
         <div class="securityStatus">

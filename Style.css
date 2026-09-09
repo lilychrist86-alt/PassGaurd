@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageLoad 0.4s ease;
+}
+
+@keyframes pageLoad {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,12 +90,14 @@ body {
 
 
 .createpw {
-    padding: 9px 15px;
+    height: 38px;
+    width: 38px;
+
     border: 1px solid #CBD5E1;
-    border-radius: 8px;
+    border-radius: 50%;
     background: #FFFFFF;
     color: #0168f8;
-    font-size: 13px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     transition: 0.2s ease;
@@ -512,17 +535,18 @@ body {
 .headerActions {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
 }
 
 #themeToggle {
+    color: #2884f5;
     width: 38px;
     height: 38px;
     border: 1px solid #CBD5E1;
-    border-radius: 20px;
+    border-radius: 50%;
     background: #FFFFFF;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 19px;
     transition: 0.2s ease;
 }
 
@@ -668,7 +692,6 @@ body.dark-mode .mainpagebtn:hover {
     background: #22272E;
     border-color: #475569;
 }
-
 
 
 
